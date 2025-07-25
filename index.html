@@ -178,29 +178,48 @@
         <section>
             <div class="text-center mt-20">
                 <h1 class="font-bold text-4xl"><span class="text-orange-500">Latest</span> Deals</h1>
-                <p class="text-gray-500 text-xl mt-8">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>
-                classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <p class="text-gray-500 text-xl mt-8">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-
-            <div class="max-w-7xl mx-auto flex items-center justify-between px-5 md:px-0">
-                <div class="relative grid grid-cols-1 gap-y-10 mt-20">
-                    <img class="rounded-xl w-120" src="assets/deal-bloom.png" alt="">
-                    <div class="absolute -top-40 left-0 w-full h-full flex items-center justify-center text-white p-4 space-y-4">
-                        <p class="text-xl">60% Off | Bloom Plant</p>
+        
+            <!-- Grid Layout with 2 Columns -->
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+        
+                <!-- Column 1: Two Images stacked vertically, equal height -->
+                <div class="flex flex-col gap-6">
+                    <!-- First Image: Bloom Plant -->
+                    <div class="relative">
+                        <img class="rounded-xl w-full h-80 object-cover" src="assets/deal-bloom.png" alt="Bloom Plant">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                            <p class="text-xl font-bold text-center">60% Off | Bloom Plant</p>
+                            <a href="#" class="text-xl font-semibold underline">Shop Now</a>
+                        </div>
                     </div>
-                    
-                    <img class="rounded-xl w-120" src="assets/deal-ana.png" alt="">
-                    
+        
+                    <!-- Second Image: Ana Plant -->
+                    <div class="relative">
+                        <img class="rounded-xl w-full h-80 object-cover" src="assets/deal-ana.png" alt="Ana Plant">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                            <p class="text-xl font-bold text-center">30% Off | Ana Plant</p>
+                            <a href="#" class="text-xl font-semibold underline">Shop Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-20">
-                    <img class="rounded-xl w-190 h-141.5" src="assets/deal-zabo.png" alt="">
+        
+                <!-- Column 2: One Image with the same height as combined images in the left column -->
+                <div class="relative h-166 w-full md:h-166 md:w-210">
+                    <img class="rounded-xl w-full h-full object-cover" src="assets/deal-zabo.png" alt="Zabo Plant">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                        <p class="text-xl font-bold text-center">25% Off | Zabo Plant</p>
+                        <a href="#" class="text-xl font-semibold underline">Shop Now</a>
+                    </div>
                 </div>
             </div>
-
-            
-            
-            
         </section>
+        
+        
+        
+        
+        
 
         <section>
                 <div class="relative bg-cover bg-center mt-20" style="background-image: url('assets/news-letter-bg.png'); height: 500px;">
@@ -230,9 +249,61 @@
 
     </main>
 
-    <footer>
+    <footer class="bg-gray-100 py-10 px-5 md:px-0">
+        <div class="ml-40 mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+    
+            
+            <div class="flex flex-col items-center md:items-start ">
+                <img src="assets/logo.png" alt="" class="mb-4">
+                <p class="text-center md:text-left text-gray-500">
+                    Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop.
+                </p>
+            </div>
+    
+            
+            <div class="flex flex-col items-center md:items-start gap-y-6 pl-45">
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Home</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Blog</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">FAQ</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Contact Us</a>
+            </div>
+    
+            
+            <div class="flex flex-col items-center md:items-start pl-10 gap-y-6">
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Features</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Pricing</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Privacy Policy</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Terms of Service</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 mb-2">Help Center</a>
+            </div>
+    
 
+            <div class="flex justify-center space-x-6">
+                
+                <a href="#" class="text-blue-600">
+                    <img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                </a>
+                
+                <a href="#" class="text-blue-500">
+                    <img src="assets/icon-twitter.png" alt="Twitter" class="w-8 h-8">
+                </a>
+                
+                <a href="#" class="text-blue-600">
+                    <img src="assets/icon-facebook.png" alt="Facebook" class="w-8 h-8">
+                </a>
+                
+                <a href="#" class="text-red-600">
+                    <img src="assets/icon-youtube.png" alt="YouTube" class="w-8 h-8">
+                </a>
+            </div>
+
+    
+        </div>
     </footer>
+    
+    
+    
     
 </body>
 </html>
